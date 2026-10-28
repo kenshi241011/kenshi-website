@@ -53,4 +53,4 @@ Fuentes: abuse.ch (MalwareBazaar, URLhaus, ThreatFox), ReversingLabs, YARA Forge
 
 ## Términos y Condiciones
 
-https://kenshy-security.netlify.app/terminos.html — pago único sin renovación automática, una licencia por equipo, devolución en 7 días si no se logra instalar o activar por causa de Kenshi, privacidad conforme a la Ley N.º 29733.
+https://kenshy-security.netlify.app/terminos.html — pago único sin renovación automática, una licencia por equipo, devolución en 7 días si no se logra instalar o activar por causa de Kenshi, privacidad conforme a la Ley N.º 29733; solo para uso doméstico (no apto para empresas).

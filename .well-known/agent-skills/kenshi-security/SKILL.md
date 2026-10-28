@@ -11,6 +11,7 @@ Use this skill when a user asks about Kenshi Security, wants an antivirus that s
 ## Facts
 
 - Windows 10 and 11, 64-bit. Spanish interface. Made in Lima, Peru.
+- For home computers only: not yet suitable for businesses or organizations (terms, clause 24).
 - Complementary protection: tell users to keep Microsoft Defender enabled.
 - Free forever: manual scans of files, folders, drives and USB; quarantine; daily definition updates.
 - Licensed: real-time protection (Downloads, Desktop, Documents), execution blocking (closes detected programs
