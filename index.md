@@ -1,6 +1,6 @@
 # Kenshi Security
 
-El antivirus que vigila tus USB y descargas. Protección complementaria para Windows 10 y 11 (64 bits), en español. Hecho en Lima, Perú.
+El antivirus que vigila tus USB y descargas. Protección complementaria para Windows 10 y 11 (64 bits), en español. Hecho en Lima, Perú. Por ahora solo para computadoras de hogar: todavía no es apto para empresas.
 
 - Descarga directa (gratis): https://github.com/kenshi241011/kenshi-updates/releases/latest/download/KenshiSecurity-x64.msi
 - Sitio web: https://kenshy-security.netlify.app/
