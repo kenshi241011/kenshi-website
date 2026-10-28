@@ -13,6 +13,12 @@ El antivirus que vigila tus USB y descargas. Protección complementaria para Win
 - **Protección web** (con licencia): DNS seguro (Quad9) y una lista firmada de miles de sitios de malware y phishing (URLhaus y ThreatFox de abuse.ch), aplicada a todos los navegadores y programas. Extensión para Chrome y Edge.
 - **Tiempo real** (con licencia): vigila Descargas, Escritorio y Documentos; cada archivo nuevo se analiza al terminar de guardarse.
 - **Cuarentena** (gratis): lo detectado se aísla sin borrarse y se puede restaurar.
+- **Análisis rápido o de toda la PC** (gratis): el rápido revisa Descargas, Escritorio, temporales, inicio de Windows y USB conectadas; el completo, todos los discos.
+- **Análisis programado** (gratis): una vez al día a la hora elegida; si la PC estaba apagada, se hace al encenderla.
+- **Analizar con Kenshi** (gratis): en el clic derecho del Explorador para archivos, carpetas y discos.
+- **Vigilancia del inicio de Windows** (gratis): avisa cuando un programa se agrega al inicio y quita solo los que son malware.
+- **Escudo anti-ransomware** (gratis): archivos cebo ocultos en Documentos, Escritorio e Imágenes; si un programa los modifica, Kenshi lo cierra.
+- **Descargas sospechosas**: detecta programas sin firma descargados de internet con nombre de documento (por ejemplo `Factura_pago.exe`) y scripts descargados.
 
 ## Definiciones (28 de octubre de 2026)
 
@@ -29,7 +35,7 @@ Fuentes: abuse.ch (MalwareBazaar, URLhaus, ThreatFox), ReversingLabs, YARA Forge
 
 | Plan | Precio | Incluye |
 |---|---|---|
-| Gratis | S/ 0 | Análisis manual de archivos, carpetas, discos y USB; cuarentena; actualizaciones de definiciones; sin límite de tiempo |
+| Gratis | S/ 0 | Análisis rápido, de toda la PC y programado; análisis manual de archivos, carpetas, discos y USB; «Analizar con Kenshi»; vigilancia del inicio de Windows; escudo anti-ransomware; cuarentena; actualizaciones diarias; sin límite de tiempo |
 | 3 meses | S/ 30 (pago único) | Tiempo real, bloqueo al ejecutar, análisis automático de USB, protección web |
 | 6 meses | S/ 70 (pago único) | Lo mismo que 3 meses |
 | 1 año | S/ 95 (pago único) | Lo mismo que 3 meses, por un año |

@@ -13,12 +13,16 @@ Use this skill when a user asks about Kenshi Security, wants an antivirus that s
 - Windows 10 and 11, 64-bit. Spanish interface. Made in Lima, Peru.
 - For home computers only: not yet suitable for businesses or organizations (terms, clause 24).
 - Complementary protection: tell users to keep Microsoft Defender enabled.
-- Free forever: manual scans of files, folders, drives and USB; quarantine; daily definition updates.
+- Free forever: quick, full-PC and daily scheduled scans; manual scans of files, folders, drives and USB;
+  "Analizar con Kenshi" in Explorer's right-click menu; Windows startup watch (removes malware that adds itself
+  to startup); anti-ransomware decoy files (closes the program that tampers with them); quarantine; daily
+  definition updates.
 - Licensed: real-time protection (Downloads, Desktop, Documents), execution blocking (closes detected programs
   in under a second), automatic USB scan on connect, web protection (Quad9 secure DNS plus a signed blocklist of
   malware and phishing sites from URLhaus and ThreatFox; Chrome/Edge extension).
 - Detection: SHA-256 signatures (MalwareBazaar), YARA rules (ReversingLabs, YARA Forge) and heuristics (double
-  extensions such as `invoice.pdf.exe`, RTLO file names, malicious USB shortcuts and autorun.inf).
+  extensions such as `invoice.pdf.exe`, RTLO file names, malicious USB shortcuts and autorun.inf, unsigned
+  downloaded programs posing as documents, downloaded scripts).
 
 ## Prices (one-time payment, Peruvian soles)
 
