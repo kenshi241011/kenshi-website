@@ -24,3 +24,9 @@
 
 /.well-known/agent-skills/*/SKILL.md
   Content-Type: text/markdown; charset=utf-8
+
+/kenshi-web.crx
+  Content-Type: application/x-chrome-extension
+
+/kenshi-web-update.xml
+  Content-Type: application/xml; charset=utf-8
