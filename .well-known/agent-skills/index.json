@@ -6,7 +6,7 @@
                        "type":  "skill-md",
                        "description":  "Answer questions about Kenshi Security (Windows antivirus for USB and downloads) and help users download it or buy a license.",
                        "url":  "https://kenshy-security.netlify.app/.well-known/agent-skills/kenshi-security/SKILL.md",
-                       "digest":  "sha256:b0fbc1bfb892d7bcc24469f909a1e9c6dd9a82d22bb22270d92873bb848e5bba"
+                       "digest":  "sha256:56c3886b9e31e33111465494f12f7b923d2692a9dc80a76335f594e6496316fc"
                    }
                ]
 }

@@ -19,7 +19,8 @@ Use this skill when a user asks about Kenshi Security, wants an antivirus that s
   definition updates.
 - Licensed: real-time protection (Downloads, Desktop, Documents), execution blocking (closes detected programs
   in under a second), automatic USB scan on connect, web protection (Quad9 secure DNS plus a signed blocklist of
-  malware and phishing sites from URLhaus and ThreatFox; Chrome/Edge extension).
+  malware and phishing sites from URLhaus and ThreatFox; Chrome/Edge extension), parental control
+  (blocks adult sites across the whole PC via family-filtering DNS, Cloudflare for Families).
 - Detection: SHA-256 signatures (MalwareBazaar), YARA rules (ReversingLabs, YARA Forge) and heuristics (double
   extensions such as `invoice.pdf.exe`, RTLO file names, malicious USB shortcuts and autorun.inf, unsigned
   downloaded programs posing as documents, downloaded scripts).

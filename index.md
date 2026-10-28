@@ -11,6 +11,7 @@ El antivirus que vigila tus USB y descargas. Protección complementaria para Win
 - **Análisis de USB**: al conectar una memoria muestra un aviso con el progreso del análisis. Detecta programas disfrazados de documento (por ejemplo `Factura.pdf.exe`), nombres con texto invertido (RTLO), accesos directos maliciosos (virus de accesos directos) y `autorun.inf` peligrosos. «Limpiar USB» pone las amenazas en cuarentena y vuelve a mostrar las carpetas que el virus ocultó. Gratis a mano; automático al conectar con licencia.
 - **Bloqueo al ejecutar** (con licencia): si se abre un programa que coincide con una firma de malware, Kenshi lo cierra en menos de un segundo y lo pone en cuarentena.
 - **Protección web** (con licencia): DNS seguro (Quad9) y una lista firmada de miles de sitios de malware y phishing (URLhaus y ThreatFox de abuse.ch), aplicada a todos los navegadores y programas. Extensión para Chrome y Edge.
+- **Control parental** (con licencia): bloquea las páginas para adultos en toda la PC, en cualquier navegador, con un DNS de filtro familiar (Cloudflare for Families). Se activa con un interruptor en la protección web.
 - **Tiempo real** (con licencia): vigila Descargas, Escritorio y Documentos; cada archivo nuevo se analiza al terminar de guardarse.
 - **Cuarentena** (gratis): lo detectado se aísla sin borrarse y se puede restaurar.
 - **Análisis rápido o de toda la PC** (gratis): el rápido revisa Descargas, Escritorio, temporales, inicio de Windows y USB conectadas; el completo, todos los discos.
@@ -36,7 +37,7 @@ Fuentes: abuse.ch (MalwareBazaar, URLhaus, ThreatFox), ReversingLabs, YARA Forge
 | Plan | Precio | Incluye |
 |---|---|---|
 | Gratis | S/ 0 | Análisis rápido, de toda la PC y programado; análisis manual de archivos, carpetas, discos y USB; «Analizar con Kenshi»; vigilancia del inicio de Windows; escudo anti-ransomware; cuarentena; actualizaciones diarias; sin límite de tiempo |
-| 3 meses | S/ 30 (pago único) | Tiempo real, bloqueo al ejecutar, análisis automático de USB, protección web |
+| 3 meses | S/ 30 (pago único) | Tiempo real, bloqueo al ejecutar, análisis automático de USB, protección web, control parental |
 | 6 meses | S/ 70 (pago único) | Lo mismo que 3 meses |
 | 1 año | S/ 95 (pago único) | Lo mismo que 3 meses, por un año |
 
