@@ -50,3 +50,7 @@ Fuentes: abuse.ch (MalwareBazaar, URLhaus, ThreatFox), ReversingLabs, YARA Forge
 **¿Kenshi borra mis archivos?** Nunca por su cuenta: aísla lo detectado en cuarentena.
 
 **¿Detecta todos los virus?** Ningún antivirus detecta todo. Kenshi reconoce el malware de sus definiciones, actualizadas a diario, y rasgos sospechosos como dobles extensiones o accesos directos maliciosos.
+
+## Términos y Condiciones
+
+https://kenshy-security.netlify.app/terminos.html — pago único sin renovación automática, una licencia por equipo, devolución en 7 días si no se logra instalar o activar por causa de Kenshi, privacidad conforme a la Ley N.º 29733.

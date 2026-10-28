@@ -210,6 +210,8 @@ section { padding-block: var(--section-gap); }
 .plan .badge::after { content: ""; position: absolute; inset: -4px; border-radius: inherit; border: 2px solid var(--color-surfshark-teal); opacity: 0; animation: badge-glow 2.4s ease-out infinite; }
 @keyframes badge-glow { 0% { opacity: .7; transform: scale(.9); } 70%, 100% { opacity: 0; transform: scale(1.25); } }
 @media (prefers-reduced-motion: reduce) { .plan .badge::after { animation: none; } .plans.will-reveal .plan { opacity: 1; transform: none; } }
+.terms-note { margin: var(--spacing-16) 0 0; font-size: var(--text-body-sm); color: var(--color-slate); }
+.hero .fine a { color: var(--color-ash-gray); }
 /* How to buy */
 .buy { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--spacing-24); }
 .buy .card ol { margin: 0; padding-left: 1.2em; display: grid; gap: var(--spacing-8); color: var(--color-slate); }
@@ -281,7 +283,7 @@ footer .legal .wrap { display: flex; flex-wrap: wrap; justify-content: space-bet
             <a class="btn coral" href="https://github.com/kenshi241011/kenshi-updates/releases/latest/download/KenshiSecurity-x64.msi">Descargar gratis</a>
             <a class="btn light" href="#planes">Ver planes</a>
           </div>
-          <p class="fine">Windows 10 y 11 (64 bits) · Instalador de unos 60 MB</p>
+          <p class="fine">Windows 10 y 11 (64 bits) · Instalador de unos 60 MB · Al descargar aceptas los <a href="/terminos.html">Términos y Condiciones</a></p>
         </div>
         <div class="shot"><img src="img/panel.jpg" alt="Panel principal de Kenshi Security con el estado del motor, las definiciones y la cuarentena" width="1120" height="760"></div>
       </div>
@@ -401,6 +403,7 @@ footer .legal .wrap { display: flex; flex-wrap: wrap; justify-content: space-bet
           <a class="btn dark" href="#comprar">Solicitar</a>
         </article>
       </div>
+      <p class="terms-note">Pago único, sin renovación automática. Una licencia por equipo. Devolución en 7 días si no logras instalar o activar Kenshi. <a href="/terminos.html#precios">Ver Términos y Condiciones</a>.</p>
       <div class="free-band">
         <p><strong>Versión gratuita:</strong> análisis de archivos, carpetas, discos y USB a mano, cuarentena y actualizaciones de definiciones, sin límite de tiempo.</p>
         <a class="link-arrow" href="https://github.com/kenshi241011/kenshi-updates/releases/latest/download/KenshiSecurity-x64.msi">Descargar gratis</a>
@@ -459,10 +462,10 @@ footer .legal .wrap { display: flex; flex-wrap: wrap; justify-content: space-bet
       <p>Antivirus complementario para Windows. Hecho en Lima, Perú.</p>
     </div>
     <div><h4>Producto</h4><ul><li><a href="#funciones">Funciones</a></li><li><a href="#planes">Planes</a></li><li><a href="https://github.com/kenshi241011/kenshi-updates/releases/latest/download/KenshiSecurity-x64.msi">Descargar</a></li></ul></div>
-    <div><h4>Ayuda</h4><ul><li><a href="#preguntas">Preguntas frecuentes</a></li><li><a href="#comprar">Cómo comprar</a></li></ul></div>
+    <div><h4>Ayuda</h4><ul><li><a href="#preguntas">Preguntas frecuentes</a></li><li><a href="#comprar">Cómo comprar</a></li><li><a href="/terminos.html">Términos y Condiciones</a></li></ul></div>
     <div><h4>Contacto</h4><ul><li><a href="https://wa.me/51992140169">WhatsApp +51 992 140 169</a></li></ul></div>
   </div>
-  <div class="legal"><div class="wrap"><span>© 2026 Kenshi Security</span><span>Mantén Microsoft Defender activado junto a Kenshi.</span></div></div>
+  <div class="legal"><div class="wrap"><span>© 2026 Kenshi Security · <a href="/terminos.html">Términos y Condiciones</a></span><span>Mantén Microsoft Defender activado junto a Kenshi.</span></div></div>
 </footer>
 
 <script>
