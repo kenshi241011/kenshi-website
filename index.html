@@ -198,6 +198,18 @@ section { padding-block: var(--section-gap); }
 .free-band p { margin: 0; max-width: 46em; }
 @media (max-width: 900px) { .plans { grid-template-columns: 1fr; } }
 
+/* Plans motion: cards rise in one after another, prices count up, hover lifts, the badge glows.
+   Cards are visible without script; the script only hides them right before animating them in. */
+.plan { transition: transform .3s cubic-bezier(.2,.8,.2,1), border-color .3s, opacity .6s; }
+.plan:hover { transform: translateY(-8px); border-color: var(--color-charcoal-ink); }
+.plan.best:hover { border-color: var(--color-surfshark-teal); }
+.plans.will-reveal .plan { opacity: 0; transform: translateY(28px); }
+.plans.will-reveal .plan.in { opacity: 1; transform: none; transition: transform .7s cubic-bezier(.2,.8,.2,1), opacity .7s; transition-delay: var(--delay, 0s); }
+.plans.will-reveal .plan.in:hover { transform: translateY(-8px); transition-delay: 0s; }
+.plan .badge { position: relative; }
+.plan .badge::after { content: ""; position: absolute; inset: -4px; border-radius: inherit; border: 2px solid var(--color-surfshark-teal); opacity: 0; animation: badge-glow 2.4s ease-out infinite; }
+@keyframes badge-glow { 0% { opacity: .7; transform: scale(.9); } 70%, 100% { opacity: 0; transform: scale(1.25); } }
+@media (prefers-reduced-motion: reduce) { .plan .badge::after { animation: none; } .plans.will-reveal .plan { opacity: 1; transform: none; } }
 /* How to buy */
 .buy { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--spacing-24); }
 .buy .card ol { margin: 0; padding-left: 1.2em; display: grid; gap: var(--spacing-8); color: var(--color-slate); }
@@ -474,6 +486,37 @@ footer .legal .wrap { display: flex; flex-wrap: wrap; justify-content: space-bet
     }
   });
 
+  // Plans: reveal the cards in sequence when they scroll into view and count the prices up.
+  (function animatePlans() {
+    const grid = document.querySelector('.plans');
+    if (!grid || matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) return;
+    const cards = [...grid.querySelectorAll('.plan')];
+    if (grid.getBoundingClientRect().top < innerHeight * 0.85) return; // already on screen: leave it still
+    grid.classList.add('will-reveal');
+    cards.forEach((card, i) => card.style.setProperty('--delay', `${i * 0.14}s`));
+    function countUp(el, delay) {
+      const target = parseInt(el.textContent.replace(/\D/g, ''), 10);
+      if (!target) return;
+      const start = performance.now() + delay;
+      const step = (now) => {
+        const t = Math.min(1, Math.max(0, (now - start) / 900));
+        const eased = 1 - Math.pow(1 - t, 3);
+        el.textContent = `S/ ${Math.round(target * eased)}`;
+        if (t < 1) requestAnimationFrame(step);
+      };
+      el.textContent = 'S/ 0';
+      requestAnimationFrame(step);
+    }
+    new IntersectionObserver((entries, observer) => {
+      if (!entries.some((e) => e.isIntersecting)) return;
+      observer.disconnect();
+      cards.forEach((card, i) => {
+        card.classList.add('in');
+        const amount = card.querySelector('.amount');
+        if (amount) countUp(amount, 200 + i * 140);
+      });
+    }, { threshold: 0.25 }).observe(grid);
+  })();
   // Decode motion: stamped text resolves left to right out of random glyphs, with the letters not
   // yet resolved dimmed. Runs when the text scrolls into view, and again on hover for the rows.
   // The final text is in the page from the start, so it reads correctly without this script.
