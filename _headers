@@ -1,0 +1,26 @@
+# Netlify response headers.
+
+/
+  Link: </index.md>; rel="alternate"; type="text/markdown", </sitemap.xml>; rel="sitemap"; type="application/xml", </.well-known/ai-catalog.json>; rel="describedby"; type="application/json", </.well-known/agent-skills/index.json>; rel="describedby"; type="application/json"
+  Vary: Accept
+
+/index.html
+  Link: </index.md>; rel="alternate"; type="text/markdown", </sitemap.xml>; rel="sitemap"; type="application/xml", </.well-known/ai-catalog.json>; rel="describedby"; type="application/json"
+
+/index.md
+  Content-Type: text/markdown; charset=utf-8
+
+/robots.txt
+  Content-Type: text/plain; charset=utf-8
+
+/.well-known/*
+  Access-Control-Allow-Origin: *
+
+/.well-known/ai-catalog.json
+  Content-Type: application/json; charset=utf-8
+
+/.well-known/agent-skills/index.json
+  Content-Type: application/json; charset=utf-8
+
+/.well-known/agent-skills/*/SKILL.md
+  Content-Type: text/markdown; charset=utf-8

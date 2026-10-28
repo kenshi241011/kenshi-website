@@ -1,0 +1,42 @@
+{
+    "specVersion":  "1.0",
+    "host":  {
+                 "displayName":  "Kenshi Security",
+                 "identifier":  "did:web:kenshy-security.netlify.app"
+             },
+    "entries":  [
+                    {
+                        "identifier":  "urn:air:kenshy-security.netlify.app:product:overview",
+                        "displayName":  "Kenshi Security: producto, planes y compra",
+                        "type":  "text/markdown",
+                        "url":  "https://kenshy-security.netlify.app/index.md",
+                        "representativeQueries":  [
+                                                      "antivirus para USB en Windows",
+                                                      "quitar virus de accesos directos de una memoria USB",
+                                                      "precio de Kenshi Security",
+                                                      "antivirus peruano en español"
+                                                  ]
+                    },
+                    {
+                        "identifier":  "urn:air:kenshy-security.netlify.app:skills:kenshi-security",
+                        "displayName":  "Kenshi Security agent skill",
+                        "type":  "text/markdown",
+                        "url":  "https://kenshy-security.netlify.app/.well-known/agent-skills/kenshi-security/SKILL.md",
+                        "representativeQueries":  [
+                                                      "how to download Kenshi Security",
+                                                      "buy a Kenshi Security license",
+                                                      "Kenshi Security plans and prices"
+                                                  ]
+                    },
+                    {
+                        "identifier":  "urn:air:kenshy-security.netlify.app:download:windows-installer",
+                        "displayName":  "Instalador de Kenshi Security para Windows (x64)",
+                        "type":  "application/x-msi",
+                        "url":  "https://github.com/kenshi241011/kenshi-updates/releases/latest/download/KenshiSecurity-x64.msi",
+                        "representativeQueries":  [
+                                                      "descargar Kenshi Security",
+                                                      "Kenshi Security installer download"
+                                                  ]
+                    }
+                ]
+}

@@ -1,0 +1,12 @@
+{
+    "$schema":  "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+    "skills":  [
+                   {
+                       "name":  "kenshi-security",
+                       "type":  "skill-md",
+                       "description":  "Answer questions about Kenshi Security (Windows antivirus for USB and downloads) and help users download it or buy a license.",
+                       "url":  "https://kenshy-security.netlify.app/.well-known/agent-skills/kenshi-security/SKILL.md",
+                       "digest":  "sha256:0495284eea01bb21b791ea89faa68a3a8c4e5fa109fa1f49906f02e5086576bb"
+                   }
+               ]
+}

@@ -1,0 +1,26 @@
+# Kenshi Security - https://kenshy-security.netlify.app/
+# Public marketing site: everything here may be crawled, indexed and quoted.
+
+# AI search and answer crawlers: allowed, so Kenshi can appear in AI answers.
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+Allow: /
+
+# AI training crawlers: allowed (product information we want models to know).
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: CCBot
+Allow: /
+
+# Everyone else (search engines included).
+User-agent: *
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+Sitemap: https://kenshy-security.netlify.app/sitemap.xml

@@ -227,6 +227,13 @@ footer .legal { border-top: 1px solid var(--color-graphite); }
 footer .legal .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--spacing-8); padding-block: var(--spacing-24); color: var(--color-mist-gray); font-size: var(--text-caption); }
 @media (max-width: 900px) { footer .wrap { grid-template-columns: 1fr 1fr; } }
 </style>
+<link rel="canonical" href="https://kenshy-security.netlify.app/">
+<link rel="alternate" type="text/markdown" href="/index.md">
+<meta property="og:title" content="Kenshi Security: el antivirus que vigila tus USB y descargas">
+<meta property="og:description" content="Antivirus complementario para Windows: analiza USB y descargas, cierra programas maliciosos al abrirse y bloquea sitios de malware y phishing. Gratis o desde S/ 30.">
+<meta property="og:url" content="https://kenshy-security.netlify.app/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://kenshy-security.netlify.app/img/panel.jpg">
 </head>
 <body>
 
@@ -511,5 +518,29 @@ footer .legal .wrap { display: flex; flex-wrap: wrap; justify-content: space-bet
   })();
 </script>
 
-</body>
+<script>
+  // WebMCP: lets AI agents in the browser read prices and get the download link without scraping the page.
+  (function registerAgentTools() {
+    const mc = document.modelContext || navigator.modelContext;
+    if (!mc || typeof mc.registerTool !== 'function') return;
+    const plans = [
+      { plan: '3 meses', price: 'S/ 30', payment: 'pago único' },
+      { plan: '6 meses', price: 'S/ 70', payment: 'pago único' },
+      { plan: '1 año', price: 'S/ 95', payment: 'pago único' },
+    ];
+    const tools = [
+      { name: 'get_plans', description: 'Planes y precios de las licencias de Kenshi Security (en soles peruanos). La versión gratuita incluye análisis manual y cuarentena.',
+        inputSchema: { type: 'object', properties: {} }, execute: async () => ({ free: 'Análisis manual, cuarentena y actualizaciones: gratis', plans }) },
+      { name: 'get_download_link', description: 'Enlace de descarga directa del instalador de Kenshi Security para Windows 10/11 de 64 bits.',
+        inputSchema: { type: 'object', properties: {} },
+        execute: async () => ({ url: 'https://github.com/kenshi241011/kenshi-updates/releases/latest/download/KenshiSecurity-x64.msi', size: 'unos 60 MB' }) },
+      { name: 'how_to_buy', description: 'Cómo comprar una licencia de Kenshi Security: desde la app o por WhatsApp.',
+        inputSchema: { type: 'object', properties: {} },
+        execute: async () => ({ app: 'Configuración → Licencia → Solicítala aquí; se activa sola al aprobarse', whatsapp: '+51 992 140 169', link: 'https://wa.me/51992140169' }) },
+    ];
+    for (const tool of tools) {
+      try { Promise.resolve(mc.registerTool(tool)).catch(() => {}); } catch { /* unsupported browser */ }
+    }
+  })();
+</script></body>
 </html>
